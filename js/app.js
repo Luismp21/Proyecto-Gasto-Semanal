@@ -135,6 +135,9 @@ class UI {
       restanteDiv.classList.remove("alert-danger", "alert-warning");
       restanteDiv.classList.add("alert-success");
     }
+    
+    // Esta linea habilita nuevamente el btn Agregar
+    formulario.querySelector('button[type="submit"]').disabled = false;
 
     //Si el total es 0 o menor
     if (restante <= 0) {
